@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - helloworld</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family: Monospace;
+				background-color: #000000;
+				margin: 0px;
+				overflow: hidden;
+			}			
+		</style>
+	</head>
+	<body>
+
+		<input type="button" onclick="resetWebGL()" value="RESET"></input>
+
+		<div id="webglContainer"></div>
+		<script src="../mrdoob/three.min.js"></script>
+		<script src="../mrdoob/loaders/ColladaLoader.js"></script>
+		<script src="../mrdoob/Detector.js"></script>		
+		<script src="webgl.js"></script>
+		
+		<script>
+			webgl_init();
+			function resetWebGL() {
+				webgl_dispose();
+				webgl_init();
+			}
+		</script>
+		
+	</body>
+</html>
