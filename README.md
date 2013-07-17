@@ -4,6 +4,7 @@ ThreeJSiPad
 Optimize Threejs to work on iPad (iOS 6.0 or above) without crashing when going in/out.
 
 0.0.1
+
 	Initial version 0.0.1
 	Add Threejs.js r59.
 	Add Detector.js.
